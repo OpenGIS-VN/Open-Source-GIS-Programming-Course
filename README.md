@@ -1,8 +1,6 @@
 # Open-Source-GIS-Programming
 Open Source GIS Programming
 
-|
-
 **Phần 1: Giới thiệu về phát triển phần mềm GIS nguồn mở**
 
 - Tổng quan về phần mềm GIS nguồn mở và những ưu điểm của nó
