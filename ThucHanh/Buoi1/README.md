@@ -22,7 +22,9 @@ https://1drv.ms/u/s!AhouGCUE4BeHr9Q8qleaT5YsjGaWKA?e=z2a7pj&authuser=1
 
 https://dash.infinityfree.com/register
 
-[Xem thêm] [https://github.com/OpenGIS-VN/Open-Source-GIS-Programming-Course/blob/soiqualang/ThucHanh/Buoi1/Hosting.MD]
+<a href="Hosting.MD" target="_blank">Xem thêm Hosting</a>
+
+
 ## Thực hành
 
 - Cài đặt môi trường phát triển ứng dụng WebGIS
