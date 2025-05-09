@@ -24,5 +24,6 @@ https://dash.infinityfree.com/register
 
 ## Thực hành
 
+- Cài đặt môi trường phát triển ứng dụng WebGIS
 - Đăng ký Hosting, Domain
 - Tạo CV cá nhân và publish lên Hosting vừa đăng ký
