@@ -228,6 +228,14 @@ Xem chi tiết hơn ở slide
   - Đóng kết nối sau khi sử dụng để giải phóng tài nguyên.
   - Sử dụng `pg_escape_string` để ngăn chặn SQL Injection nếu có dữ liệu đầu vào từ người dùng.
 
+#### Tóm lại, để thực hiện truy vấn với PostgreSQL, cần thực hiện các bước:
+
+* Tạo connection ($conn)
+* Tạo lệnh truy vấn
+* Thực thi lệnh truy vấn (pg_query($conn,$query))
+
+
+
 ### 3.3. Phân biệt Get/Post method
 - **GET**:
   - Dữ liệu được gửi qua URL (query string).
