@@ -1,17 +1,18 @@
 //https://www.google.com/maps/@16.2033834,107.138095,5.75z
 	
-	geo_service='http://localhost:8080/geoserver/class1/wms?';
+	geo_service='http://egeosrv.opengis.vn/geoserver/gisnguonmo/wms?';
 	
 	
 	
 	//Khai bao ban do nen
-	mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+	vetinh_basemap = 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}';
+	road_basemap = 'https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}';
 	
 	var mbAttr='hahahah';
 	
-	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+	var vetinh   = L.tileLayer(vetinh_basemap);
 	
-	var streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+	var road  = L.tileLayer(road_basemap);
 	
 	
 	
@@ -20,25 +21,25 @@
 	});
 	
 	
-	//Them ban do vn_tinh
-	var vn_tinh = L.tileLayer.wms(geo_service, {
-		layers: 'class1:vn_tinh',
+	//Them ban do duynghia_quangnam
+	var duynghia_quangnam = L.tileLayer.wms(geo_service, {
+		layers: 'gisnguonmo:duynghia_quangnam',
 		format: 'image/png',
 		transparent: true,
 		tiled: true,
 	});
 	
 	var map = L.map('map', {
-		center: [16.2033834, 107.138095],
-		zoom: 5,
-		layers: [grayscale, vn_tinh]
+		center: [15.8425551, 108.3792469],
+		zoom: 14,
+		layers: [vetinh, duynghia_quangnam]
 	});
 	
 	//Khai bao control layer
 	//Ban do nen
 	var baseLayers = {
-		"Bản đồ Grayscale": grayscale,
-		"Bản đồ Streets": streets
+		"Bản đồ Vệ tinh": vetinh,
+		"Bản đồ Streets": road
 	};
 	
 	//Ban do chuyen de
