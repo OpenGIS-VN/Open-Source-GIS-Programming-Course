@@ -144,3 +144,16 @@ Start lại Apache HTTP
 
 <img width="512" height="129" alt="image" src="https://github.com/user-attachments/assets/c98b4660-de47-4803-a368-a710cd642a29" />
 
+## Fix lỗi php chưa kết nối PostgreSQL
+
+<img width="908" height="323" alt="image" src="https://github.com/user-attachments/assets/e7bc733d-5734-48d8-8658-ab63a46938bd" />
+
+Sửa file `C:\xampp\php\php.ini`
+
+Tìm những extension liên quan `pg`, bỏ comment đi
+
+```txt
+extension=pdo_pgsql
+extension=pgsql
+```
+Restart Apache
