@@ -112,6 +112,7 @@ Cần đổi port Apache HTTP sang port khác, ví dụ 81
 Edit file `C:\xampp\apache\conf\httpd.conf`
 
 Điều chỉnh 2 chỗ:
+
 <img width="507" height="209" alt="image" src="https://github.com/user-attachments/assets/84dbd0ab-b627-4035-86fa-3fdaea87fd48" />
 
 Đổi thành
