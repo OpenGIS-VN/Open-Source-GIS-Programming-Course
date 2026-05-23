@@ -139,3 +139,7 @@ Listen 81
 ServerName localhost:81
 ```
 
+Start lại Apache HTTP
+
+<img width="512" height="129" alt="image" src="https://github.com/user-attachments/assets/c98b4660-de47-4803-a368-a710cd642a29" />
+
